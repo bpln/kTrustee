@@ -117,9 +117,9 @@ ul { list-style-type: none; }
 
 #attack {
     float: left; 
-    padding: 0 10px 20px 0;
+    padding: 0 30px 20px 0;
     height: 388px;
-    width: 450px;
+    width: 470px;
 }
 
 #algorithm1 {
