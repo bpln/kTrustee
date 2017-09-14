@@ -21,18 +21,24 @@
 				<h2>kTrustee</h2>
 				<b><big>kTrustee</big></b> is a trust-aware location cloaking mechanism that is resilient to location injection attacks and guarantees a lower bound on the user's in-distinguishability.
 				<br /><br />
-				We make three original contributions:
+				Key features:
 				<ul>
-					<li>We first propose and characterize location injection attacks that can compromise users' privacy setting of <i>k-Anonymity</i> in any existing CLPM. We experimentally demonstrate the effectiveness of such attacks through simulations.</li>
-					<li>We propose the notion of trust in CLPMs and design a suite of trust-based location cloaking algorithms that can mitigate the impact of location injection attacks.</li>
-					<li>We present the theoretical and experimental analyses of the proposed approaches to demonstrate and validate their effectiveness and resilience against location injection attacks.</li>
+					<li>kTrustee characterises location injection attacks that can compromise users' privacy 
+						setting of <i>k-Anonymity</i> in a Cloaking-based Location Privacy Presserving Mechanism (CLPM). 
+						</li>
+					<li>Models the notion of trust in CLPMs and employs a suite of trust-based location cloaking 
+						algorithms that can mitigate the impact of location injection attacks.</li>
+					<li>Quantifiable effectiveness and resilience against location injection attacks.</li>
 
 				</ul> 
 				<br /><br />
 				
 				<h2>Location injection attack</h2> 
 				<p>
-				In a location injection attack, an attacker can distinguish the fake users since these users are either created or controlled by the attacker. As a result, the number of remained users in the cloaked region becomes less than the user’s privacy requirement.
+				In a location injection attack, an attacker injects fake users in a perturbed location such that the adversary
+					can distinguish the fake users from real users to reduce the anonymity level.
+					 As a result, the number of real users in the cloaked region becomes less than the user’s privacy 
+					requirement.
                 <div id="attack">
 					<img src="figures/attack.jpg" alt="attack" />
 				</div>
@@ -41,7 +47,9 @@
 				<br /><br />
 
 				<h2>k-Trustee</h2> 
-				<div>We introduce three cloaked region expansion schemes in the cloaking-based location privacy mechanism guaranteeing k-Trustee: random expansion, greedy expansion and hybrid expansion.</div>
+				<div>k-Trustee employs three location cloaking region expansion schemes in the
+					guaranteeing namely (i) random expansion, (ii) greedy expansion and (iii) hybrid expansion that understands
+			the underlying location injection attack and guarantees strong anonymity even after the attacks</div>
 				<div id="algorithm">
 					<img src="figures/algorithm.jpg" alt="algorithm" />
 				</div>
@@ -82,7 +90,7 @@
 
 		<div id="footer">
 			<p>
-				Design by <a href="http://www.minimalistic-design.com">Minimalistic Design</a>
+				
 			</p>
 		</div>
 
